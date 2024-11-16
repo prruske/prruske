@@ -1,0 +1,127 @@
+/* Apply Montserrat font to the entire body for a clean, modern look */
+body {
+  font-family: "Montserrat", sans-serif; /* Default font for consistency */
+  margin: 0; /* Remove default margins for better layout control */
+  padding: 0; /* Ensure no padding around body */
+  background-color: #f4f4f4; /* Neutral background to reduce strain on eyes */
+  display: flex; /* Flex layout for easy centering */
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Add Kohinoor Bengali font for specific text in Bengali */
+@font-face {
+  font-family: "Kohinoor Bengali";
+  src: url("font/KohinoorBangla.ttf") format("truetype"); /* Custom font for Bengali */
+  font-weight: normal;
+  font-style: normal;
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.password-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.password-container input {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1e8449;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-container button:hover {
+  background-color: #145a32;
+}
+
+/* Styling for the header section */
+header {
+  text-align: center; /* Center-align text for symmetry */
+  padding: 50px; /* Generous padding for a spacious look */
+  background-color: #1e8449; /* Rich green for vibrancy */
+  color: white; /* Contrast with the green background */
+}
+
+/* Main heading with Montserrat for clarity and emphasis */
+h1 {
+  font-family: "Montserrat", sans-serif; /* Ensures heading is bold and modern */
+  font-weight: 700; /* Strong bold weight for emphasis */
+  font-size: 3rem; /* Large size for prominent display */
+  line-height: 1.2; /* Better readability with adequate spacing */
+}
+
+/* Bengali paragraph styled with Kohinoor Bengali font */
+.p1 {
+  font-size: 1.2rem; /* Slightly larger size for readability */
+  font-family: "Kohinoor Bengali", sans-serif; /* Matches Bengali script aesthetics */
+  line-height: 1.5; /* Adds breathing room between lines */
+}
+
+/* Round box container for structured layout */
+.round-box {
+  width: 80%; /* Adaptive size for various screen widths */
+  height: auto; /* Allows flexibility with content */
+  max-height: 1200px; /* Prevents excessive height on large screens */
+  border: 2px solid black; /* Subtle, clean border */
+  border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
+  display: flex; /* Flex layout for stacking child sections */
+  flex-direction: column;
+  overflow: hidden; /* Keeps content neat within the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+  margin: 50px auto; /* Center the box and add vertical spacing */
+  background-color: #fff; /* White background for better contrast */
+}
+
+/* Header section inside the round box */
+section .header {
+  padding: 20px; /* Ample spacing for a clean layout */
+  color: #000; /* Black text for better readability */
+  text-align: center; /* Center-align for symmetry */
+  font-weight: 500; /* Medium weight for balance */
+  font-family: "Montserrat", sans-serif; /* Matches global font for consistency */
+  display: flex;
+  justify-content: space-between; /* Spreads out header items evenly */
+  font-size: 1rem; /* Standard size for clear legibility */
+}
+
+/* Main content area for body text */
+.main {
+  flex: 1; /* Takes up remaining space dynamically */
+  padding: 20px; /* Comfortable spacing around content */
+  background-color: #81c784; /* Light green for a fresh look */
+  color: white; /* White text contrasts with green background */
+  font-size: 1rem; /* Standard size for easy reading */
+  font-family: "Montserrat", sans-serif; /* Maintains clean look */
+  text-align: center;
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Bottom section styled as a footer */
+.bottom {
+  background-color: #2c6b2f; /* Darker green for visual distinction */
+  padding: 20px; /* Balanced spacing */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center-align text for symmetry */
+  font-size: 1rem; /* Standard size */
+  font-family: "Montserrat", sans-serif; /* Keeps design consistent */
+}
