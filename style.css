@@ -10,10 +10,43 @@ body {
 }
 
 /* Add Kohinoor Bengali font for specific text in Bengali */
+/* Light variant */
 @font-face {
   font-family: "Kohinoor Bengali";
-  src: url("font/KohinoorBangla.ttf") format("truetype"); /* Custom font for Bengali */
-  font-weight: normal;
+  src: url("font/KohinoorBangla-Light.otf") format("truetype");
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+/* Regular variant */
+@font-face {
+  font-family: "Kohinoor Bengali";
+  src: url("font/KohinoorBangla-Regular.otf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+/* Medium variant */
+@font-face {
+  font-family: "Kohinoor Bengali";
+  src: url("font/KohinoorBangla-Medium.otf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+/* Semibold variant */
+@font-face {
+  font-family: "Kohinoor Bengali";
+  src: url("font/KohinoorBangla-Semibold.otf") format("truetype");
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+}
+
+/* Bold variant */
+@font-face {
+  font-family: "Kohinoor Bengali";
+  src: url("font/KohinoorBangla-Bold.otf") format("truetype");
+  font-weight: 700; /* Bold */
   font-style: normal;
 }
 .password-container {
@@ -75,6 +108,7 @@ h1 {
   font-size: 1.2rem; /* Slightly larger size for readability */
   font-family: "Kohinoor Bengali", sans-serif; /* Matches Bengali script aesthetics */
   line-height: 1.5; /* Adds breathing room between lines */
+  font-weight: 500;
 }
 
 /* Round box container for structured layout */
@@ -124,4 +158,21 @@ section .header {
   text-align: center; /* Center-align text for symmetry */
   font-size: 1rem; /* Standard size */
   font-family: "Montserrat", sans-serif; /* Keeps design consistent */
+}
+/*Blog section*/
+.blog-section {
+  width: 80%; /* Adaptive size for various screen widths */
+
+  border: 2px solid black; /* Subtle, clean border */
+  border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+  padding: 5%;
+  margin: 50px auto; /* Center the box and add vertical spacing */
+}
+.blog-section h1 {
+  text-align: center;
+}
+.blog-section p {
+  font-size: 15px;
 }
