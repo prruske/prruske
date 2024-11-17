@@ -147,6 +147,9 @@ section .header {
   font-size: 1rem; /* Standard size for easy reading */
   font-family: "Montserrat", sans-serif; /* Maintains clean look */
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   line-height: 1.6; /* Improved readability */
 }
 
