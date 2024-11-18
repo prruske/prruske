@@ -175,7 +175,11 @@ section .header {
 }
 .blog-section h1 {
   text-align: center;
+  font-family: "Kohinoor Bengali", sans-serif;
+  font-weight: 700;
 }
 .blog-section p {
   font-size: 15px;
+  font-family: "Kohinoor Bengali", sans-serif;
+  font-weight: 700;
 }
