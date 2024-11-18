@@ -164,9 +164,11 @@ section .header {
 }
 /*Blog section*/
 .blog-section {
-  width: 80%; /* Adaptive size for various screen widths */
+  width: 50%; /* Adaptive size for various screen widths */
+
   border: 2px solid black; /* Subtle, clean border */
   border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
   padding: 5%;
   margin: 50px auto; /* Center the box and add vertical spacing */
@@ -181,3 +183,15 @@ section .header {
   font-family: "Kohinoor Bengali", sans-serif;
   font-weight: 600;
 }
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .blog-section {
+    width: 80%; /* Adaptive size for various screen widths */
+
+  border: 2px solid black; /* Subtle, clean border */
+  border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+  padding: 5%;
+  margin: 50px auto; /* Center the box and add vertical spacing */
+  }
