@@ -178,12 +178,72 @@ section .header {
   font-family: "Kohinoor Bengali", sans-serif;
   font-weight: 700;
 }
+.blog-section h2 {
+    text-align: center;
+  font-size: 30px;
+  font-family: "Kohinoor Bengali", sans-serif;
+    margin-bottom: 20px;
+      font-weight: 600;
+}
 .blog-section p {
   font-size: 15px;
   font-family: "Kohinoor Bengali", sans-serif;
   font-weight: 600;
 }
-/* Media Query for Mobile Screens */
+
+
+
+/* Form Styling */
+.comment-form {
+   
+      
+}
+
+/* Labels */
+.comment-form label {
+    font-size: 15px;
+     
+  font-family: "Kohinoor Bengali", sans-serif;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.comment-form input, 
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;   
+  font-family: "Kohinoor Bengali", sans-serif;
+  font-weight: 500;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Focus Effect */
+.comment-form input:focus, 
+.comment-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer; margin: 0 auto; /* বাটন মাঝখানে থাকবে */
+    display: block; /* এটি middle alignment নিশ্চিত করবে */
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
 @media (max-width: 768px) {
   .blog-section {
     width: 80%; /* Adaptive size for various screen widths */
@@ -195,3 +255,4 @@ section .header {
   padding: 5%;
   margin: 50px auto; /* Center the box and add vertical spacing */
   }
+/* Responsive Design */
