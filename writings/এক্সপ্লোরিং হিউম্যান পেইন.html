@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://prruske.github.io/prruske/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -95,6 +95,31 @@
         ক্ষুধার যন্ত্রণায় খেতে শুরু করলো। তারপর ঐদিন কি হয়েছিলো আমার আর মনে
         নাই, কারণ মা আমাকে কান ধরে নিয়ে ঘুম পরাই দিয়েছিলো।
       </p>
+    </section>
+    <section class="blog-section">
+      <h2>মন্তব্য করুন</h2>
+      <form id="comment-form" class="comment-form">
+        <label for="name">আপনার নাম:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="আপনার নাম লিখুন"
+          required
+        /><br /><br />
+
+        <label for="comment">আপনার মন্তব্য:</label><br />
+        <textarea
+          id="comment"
+          name="comment"
+          rows="5"
+          placeholder="এখানে মন্তব্য লিখুন..."
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">জমা দিন</button>
+      </form>
     </section>
   </body>
 </html>
