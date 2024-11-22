@@ -33,22 +33,61 @@
         <h1>prruske</h1>
         <p class="p1">"শব্দদূষণ থেকে আমি প্রায় আলাদা!"</p>
       </header>
-      <section class="round-box">
-        <section class="header">
-          <div>Name</div>
-          <div>Date</div>
-          <div>Visit</div>
-        </section>
-        <section class="main">
-          <div>এক্সপ্লোরিং হিউম্যান পেইন</div>
-          <div>3.46pm - Nov 17</div>
-          <div>
-            <a href="writings/এক্সপ্লোরিং হিউম্যান পেইন.html" target="_blank"
-              >Click
-            </a>
+      <section id="blog-section">
+        <div class="allah-hu-akbar">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Allah3.svg"
+            alt="Allah calligraphy"
+          />
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Search blogs..."
+            onkeyup="searchBlogs()"
+          />
+        </div>
+
+        <!-- Blog List -->
+        <div class="blog-list">
+          <div class="blog-item" onclick="redirectTo('blog3.html')">
+            <h3>Blog Title 3</h3>
+            <p>
+              <span style="font-weight: bold"> Published on:</span>
+              <span style="font-weight: 500"> Nov 19, 2024 </span>
+            </p>
+            <a href="blog3.html" target="_blank">Read More</a>
           </div>
-        </section>
-        <section class="bottom">Bottom Section</section>
+          <div
+            class="blog-item"
+            onclick="redirectTo('writings/যাই ঘটুক ফোকাস থেকে সরবেন না.html')"
+          >
+            <h3>যাই ঘটুক ফোকাস থেকে সরবেন না</h3>
+            <p>
+              <span style="font-weight: bold"> Published on:</span>
+              <span style="font-weight: 500"> Nov 19, 2024 </span>
+            </p>
+            <a href="writings/যাই ঘটুক ফোকাস থেকে সরবেন না.html" target="_blank"
+              >Read More</a
+            >
+          </div>
+          <div
+            class="blog-item"
+            onclick="redirectTo('writings/এক্সপ্লোরিং হিউম্যান পেইন.html')"
+          >
+            <h3>এক্সপ্লোরিং হিউম্যান পেইন</h3>
+            <p>
+              <span style="font-weight: bold"> Published on:</span>
+              <span style="font-weight: 500"> Nov 19, 2024 </span>
+            </p>
+            <a href="writings/এক্সপ্লোরিং হিউম্যান পেইন.html" target="_blank"
+              >Read More</a
+            >
+          </div>
+        </div>
       </section>
     </div>
 
