@@ -8,7 +8,9 @@ body {
   flex-direction: column;
   width: 100%;
 }
-
+body:lang(bn), input:lang(bn) {
+   font-family: "Kohinoor Bengali", sans-serif;
+}
 /* Add Kohinoor Bengali font for specific text in Bengali */
 /* Light variant */
 @font-face {
@@ -112,56 +114,90 @@ h1 {
 }
 
 /* Round box container for structured layout */
-.round-box {
-  width: 80%; /* Adaptive size for various screen widths */
-  height: auto; /* Allows flexibility with content */
-  max-height: 1200px; /* Prevents excessive height on large screens */
-  border: 2px solid black; /* Subtle, clean border */
+
+
+#blog-section {
+    width: 50%;
+      margin: 50px auto; /* Center the box and add vertical spacing */
+    padding: 5%;
+    background-color: #fff;
+   border: 2px solid black; /* Subtle, clean border */
   border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
-  display: flex; /* Flex layout for stacking child sections */
-  flex-direction: column;
-  overflow: hidden; /* Keeps content neat within the box */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
-  margin: 50px auto; /* Center the box and add vertical spacing */
-  background-color: #fff; /* White background for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-/* Header section inside the round box */
-section .header {
-  padding: 20px; /* Ample spacing for a clean layout */
-  color: #000; /* Black text for better readability */
-  text-align: center; /* Center-align for symmetry */
-  font-weight: 500; /* Medium weight for balance */
-  font-family: "Montserrat", sans-serif; /* Matches global font for consistency */
-  display: flex;
-  justify-content: space-between; /* Spreads out header items evenly */
-  font-size: 1rem; /* Standard size for clear legibility */
-}
-
-/* Main content area for body text */
-.main {
-  flex: 1; /* Takes up remaining space dynamically */
-  padding: 20px; /* Comfortable spacing around content */
-  background-color: #81c784; /* Light green for a fresh look */
-  color: white; /* White text contrasts with green background */
-  font-size: 1rem; /* Standard size for easy reading */
-  font-family: "Montserrat", sans-serif; /* Maintains clean look */
+.allah-hu-akbar{
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  line-height: 1.6; /* Improved readability */
+  margin-bottom: 50px;
+}
+  .allah-hu-akbar img {
+    width: 100px; /* Set a specific width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+.search-bar {
+    margin-bottom: 30px;
+    text-align: center;
+    
 }
 
-/* Bottom section styled as a footer */
-.bottom {
-  background-color: #2c6b2f; /* Darker green for visual distinction */
-  padding: 20px; /* Balanced spacing */
-  color: white; /* White text for contrast */
-  text-align: center; /* Center-align text for symmetry */
-  font-size: 1rem; /* Standard size */
-  font-family: "Montserrat", sans-serif; /* Keeps design consistent */
+#search-box {
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    border-radius: 20px;
 }
+#search-box:not([lang="bn"]) {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Apply Bengali font if text is Bengali */
+#search-box[lang="bn"] {
+    font-family: 'Kohinoor Bengali', sans-serif;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+
+.blog-item {
+    padding: 10px 15px;
+    cursor: pointer; /* Change to hand icon when hovering */
+    border-radius: 6px;
+    border: 2px solid black; /* Subtle, clean border */
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.blog-item:hover {
+    transform: scale(1.02);
+
+}
+
+.blog-item h3 {
+    margin: 0 0 5px;
+}
+
+.blog-item p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.blog-item a {
+    text-decoration: none;
+    color: #1e8449;
+    font-weight: bold;
+}
+
+.blog-item a:hover {
+    text-decoration: underline;
+}
+
 /*Blog section*/
 .blog-section {
   width: 50%; /* Adaptive size for various screen widths */
@@ -245,6 +281,10 @@ section .header {
     background-color: #0056b3;
 }
 @media (max-width: 768px) {
+  #blog-section {
+    width: 80%;
+ 
+}
   .blog-section {
     width: 80%; /* Adaptive size for various screen widths */
 
