@@ -50,3 +50,9 @@ function searchBlogs() {
 function redirectTo(url) {
   window.location.href = url; // Redirects to the specified URL
 }
+
+const button = document.getElementById("categoryButton");
+
+button.addEventListener("click", function () {
+  this.classList.add("clicked");
+});

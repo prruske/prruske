@@ -1,6 +1,5 @@
-/* Apply Montserrat font to the entire body for a clean, modern look */
 body {
-  font-family: "Montserrat", sans-serif; /* Default font for consistency */
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
   margin: 0; /* Remove default margins for better layout control */
   padding: 0; /* Ensure no padding around body */
   background-color: #f4f4f4; /* Neutral background to reduce strain on eyes */
@@ -8,11 +7,10 @@ body {
   flex-direction: column;
   width: 100%;
 }
-body:lang(bn), input:lang(bn) {
-   font-family: "Kohinoor Bengali", sans-serif;
+button {
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
 }
-/* Add Kohinoor Bengali font for specific text in Bengali */
-/* Light variant */
+/* Normal variant */
 @font-face {
   font-family: "Kohinoor Bengali";
   src: url("font/KohinoorBangla-Light.otf") format("truetype");
@@ -89,210 +87,205 @@ body:lang(bn), input:lang(bn) {
   background-color: #145a32;
 }
 
-/* Styling for the header section */
 header {
-  text-align: center; /* Center-align text for symmetry */
-  padding: 50px; /* Generous padding for a spacious look */
-  background-color: #1e8449; /* Rich green for vibrancy */
-  color: white; /* Contrast with the green background */
+  text-align: center;
+  padding: 50px;
+  background-color: #1e8449;
+  color: white;
 }
 
-/* Main heading with Montserrat for clarity and emphasis */
 h1 {
-  font-family: "Montserrat", sans-serif; /* Ensures heading is bold and modern */
-  font-weight: 700; /* Strong bold weight for emphasis */
-  font-size: 3rem; /* Large size for prominent display */
-  line-height: 1.2; /* Better readability with adequate spacing */
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
-/* Bengali paragraph styled with Kohinoor Bengali font */
 .p1 {
-  font-size: 1.2rem; /* Slightly larger size for readability */
-  font-family: "Kohinoor Bengali", sans-serif; /* Matches Bengali script aesthetics */
-  line-height: 1.5; /* Adds breathing room between lines */
+  font-size: 1.2rem;
+  line-height: 1.5;
   font-weight: 500;
 }
 
-/* Round box container for structured layout */
-
-
 #blog-section {
-    width: 50%;
-      margin: 50px auto; /* Center the box and add vertical spacing */
-    padding: 5%;
-    background-color: #fff;
-   border: 2px solid black; /* Subtle, clean border */
-  border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 50px auto;
+  padding: 5%;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.allah-hu-akbar{
+
+.allah-hu-akbar {
   text-align: center;
   margin-bottom: 50px;
 }
-  .allah-hu-akbar img {
-    width: 100px; /* Set a specific width */
-    height: auto; /* Maintain the aspect ratio */
-  }
+
+.allah-hu-akbar img {
+  width: 100px;
+  height: auto;
+}
+
 .search-bar {
-    margin-bottom: 30px;
-    text-align: center;
-    
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 #search-box {
-    width: 80%;
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 700;
-    border: 2px solid #000000;
-    border-radius: 20px;
-}
-#search-box:not([lang="bn"]) {
-    font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border: 2px solid #000000;
+  border-radius: 20px;
 }
 
-/* Apply Bengali font if text is Bengali */
+#search-box:not([lang="bn"]) {
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
+}
+
 #search-box[lang="bn"] {
-    font-family: 'Kohinoor Bengali', sans-serif;
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
+}
+
+.blog-category-option {
+  text-align: left;
+}
+
+.category-button {
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #1e8449;
+  border: 2px solid #1e8449;
+  color: white;
+}
+
+.category-button.clicked {
+  background-color: #1e8449;
+  border: 2px solid #1e8449;
+  color: white;
 }
 
 .blog-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
 }
-
-
-
 
 .blog-item {
-    padding: 10px 15px;
-    cursor: pointer; /* Change to hand icon when hovering */
-    border-radius: 6px;
-    border: 2px solid black; /* Subtle, clean border */
-    transition: transform 0.2s ease-in-out;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid black;
+  transition: transform 0.2s ease-in-out;
 }
 
-
 .blog-item:hover {
-    transform: scale(1.02);
-
+  transform: scale(1.02);
 }
 
 .blog-item h3 {
-    margin: 0 0 5px;
+  margin: 0 0 5px;
 }
 
 .blog-item p {
-    margin: 0 0 10px;
-    color: #555;
+  margin: 0 0 0px;
+  color: #555;
 }
 
 .blog-item a {
-    text-decoration: none;
-    color: #1e8449;
-    font-weight: bold;
+  text-decoration: none;
+  color: #1e8449;
+  font-weight: bold;
 }
 
 .blog-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/*Blog section*/
 .blog-section {
-  width: 50%; /* Adaptive size for various screen widths */
-
-  border: 2px solid black; /* Subtle, clean border */
-  border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 5%;
-  margin: 50px auto; /* Center the box and add vertical spacing */
+  margin: 50px auto;
 }
-.blog-section h1 {
+
+.blog-section h1,
+.blog-section h2,
+.blog-section p {
   text-align: center;
-  font-family: "Kohinoor Bengali", sans-serif;
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
+  font-weight: 600;
+}
+
+.blog-section h1 {
   font-weight: 700;
 }
-.blog-section h2 {
-    text-align: center;
-  font-size: 30px;
-  font-family: "Kohinoor Bengali", sans-serif;
-    margin-bottom: 20px;
-      font-weight: 600;
-}
-.blog-section p {
-  font-size: 15px;
-  font-family: "Kohinoor Bengali", sans-serif;
-  font-weight: 600;
-}
 
-
-
-/* Form Styling */
-.comment-form {
-   
-      
-}
-
-/* Labels */
 .comment-form label {
-    font-size: 15px;
-     
-  font-family: "Kohinoor Bengali", sans-serif;
+  font-size: 15px;
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
   font-weight: 600;
 }
 
-/* Input Fields */
-.comment-form input, 
+.comment-form input,
 .comment-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;   
-  font-family: "Kohinoor Bengali", sans-serif;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
   font-weight: 500;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-/* Focus Effect */
-.comment-form input:focus, 
+.comment-form input:focus,
 .comment-form textarea:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Submit Button */
 .comment-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer; margin: 0 auto; /* বাটন মাঝখানে থাকবে */
-    display: block; /* এটি middle alignment নিশ্চিত করবে */
-    transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
 .comment-form button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
+
 @media (max-width: 768px) {
   #blog-section {
     width: 80%;
- 
-}
-  .blog-section {
-    width: 80%; /* Adaptive size for various screen widths */
-
-  border: 2px solid black; /* Subtle, clean border */
-  border-radius: 20px; /* Smooth rounded corners for modern aesthetics */
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow for depth */
-  padding: 5%;
-  margin: 50px auto; /* Center the box and add vertical spacing */
   }
-/* Responsive Design */
+  .blog-section {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .allah-hu-akbar {
+    text-align: center;
+    margin: 30px;
+  }
+}
