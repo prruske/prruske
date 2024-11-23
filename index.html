@@ -50,65 +50,91 @@
             onkeyup="searchBlogs()"
           />
         </div>
-
-        <div class="blog-category-option">
-          <button class="category-button" id="categoryButton">
-            বাস্তবিক উপদেশ
-          </button>
+        <div class="blog-category-section">
+          <div class="blog-category-option">
+            <button class="category-button" data-category="বাস্তবিক উপদেশ">
+              বাস্তবিক উপদেশ
+            </button>
+          </div>
+          <div class="blog-category-option">
+            <button class="category-button" data-category="ব্যক্তিগত রচনা">
+              ব্যক্তিগত রচনা
+            </button>
+          </div>
+          <div class="blog-category-option">
+            <button class="category-button" data-category="বই পরে উপলব্ধি">
+              বই পরে উপলব্ধি
+            </button>
+          </div>
+          <div class="blog-category-option">
+            <button class="category-button" data-category="শৃঙ্খলিত আমি">
+              শৃঙ্খলিত আমি
+            </button>
+          </div>
         </div>
 
         <!-- Blog List -->
         <div class="blog-list">
-          <div class="blog-item" onclick="redirectTo('blog3.html')">
+          <div
+            class="blog-item"
+            data-category="Unkwon"
+            onclick="redirectTo('blog3.html')"
+          >
             <h3>Blog Title 3</h3>
             <p>
-              <span style="font-weight: bold"> Category:</span>
-              <span style="font-weight: 500">Unkwon</span>
+              <span style="font-weight: bold"> Blog No.</span
+              ><span style="font-weight: 500">03</span>
             </p>
             <p>
-              <span style="font-weight: bold"> Published on:</span>
-              <span style="font-weight: 500"> Nov 19, 2024 </span>
+              <span style="font-weight: bold"> Category:</span
+              ><span style="font-weight: 500">Unkwon</span>
             </p>
-            <a href="blog3.html" target="_blank">Read More</a>
+            <p>
+              <span style="font-weight: bold"> Published on:</span
+              ><span style="font-weight: 500"> Nov 19, 2024 </span>
+            </p>
           </div>
           <div
             class="blog-item"
+            data-category="বাস্তবিক উপদেশ"
             onclick="redirectTo('writings/যাই ঘটুক ফোকাস থেকে সরবেন না.html')"
           >
             <h3>যাই ঘটুক ফোকাস থেকে সরবেন না</h3>
             <p>
-              <span style="font-weight: bold"> Category:</span>
-              <span style="font-weight: 500">বাস্তবিক উপদেশ </span>
+              <span style="font-weight: bold"> Blog No.</span
+              ><span style="font-weight: 500">02</span>
             </p>
             <p>
-              <span style="font-weight: bold"> Published on:</span>
-              <span style="font-weight: 500"> Nov 21, 2024 </span>
+              <span style="font-weight: bold"> Category:</span
+              ><span style="font-weight: 500">বাস্তবিক উপদেশ</span>
             </p>
-            <a href="writings/যাই ঘটুক ফোকাস থেকে সরবেন না.html" target="_blank"
-              >Read More</a
-            >
+            <p>
+              <span style="font-weight: bold"> Published on:</span
+              ><span style="font-weight: 500"> Nov 21, 2024 </span>
+            </p>
           </div>
           <div
             class="blog-item"
+            data-category="ব্যক্তিগত রচনা"
             onclick="redirectTo('writings/এক্সপ্লোরিং হিউম্যান পেইন.html')"
           >
             <h3>এক্সপ্লোরিং হিউম্যান পেইন</h3>
             <p>
-              <span style="font-weight: bold"> Category:</span>
-              <span style="font-weight: 500">Unknown</span>
+              <span style="font-weight: bold"> Blog No.</span
+              ><span style="font-weight: 500">01</span>
             </p>
             <p>
-              <span style="font-weight: bold"> Published on:</span>
-              <span style="font-weight: 500"> Nov 19, 2024 </span>
+              <span style="font-weight: bold"> Category:</span
+              ><span style="font-weight: 500">ব্যক্তিগত রচনা</span>
             </p>
-            <a href="writings/এক্সপ্লোরিং হিউম্যান পেইন.html" target="_blank"
-              >Read More</a
-            >
+            <p>
+              <span style="font-weight: bold"> Published on:</span
+              ><span style="font-weight: 500"> Nov 19, 2024 </span>
+            </p>
           </div>
         </div>
       </section>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

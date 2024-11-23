@@ -147,7 +147,10 @@ h1 {
 #search-box[lang="bn"] {
   font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
 }
-
+.blog-category-section {
+  display: flex;
+  gap: 15px;
+}
 .blog-category-option {
   text-align: left;
 }
@@ -168,7 +171,7 @@ h1 {
   color: white;
 }
 
-.category-button.clicked {
+.category-button.active {
   background-color: #1e8449;
   border: 2px solid #1e8449;
   color: white;
@@ -289,5 +292,11 @@ h1 {
   .allah-hu-akbar {
     text-align: center;
     margin: 30px;
+  }
+  .category-button {
+    padding: 10px;
+
+    border-radius: 6px;
+    font-size: 15px;
   }
 }
