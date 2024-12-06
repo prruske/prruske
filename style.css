@@ -239,6 +239,10 @@ h1 {
   font-family: "Montserrat", "Kohinoor Bengali", sans-serif;
   font-weight: 600;
 }
+.blog-image {
+  width: 100%;
+  border-radius: 20px;
+}
 .blog-section h1 {
   font-weight: 700;
 }
@@ -293,7 +297,10 @@ h1 {
     width: 80%;
     margin: 50px auto;
   }
-
+  .blog-image {
+    width: 100%;
+    border-radius: 20px;
+  }
   .allah-hu-akbar {
     text-align: center;
     margin: 30px;
